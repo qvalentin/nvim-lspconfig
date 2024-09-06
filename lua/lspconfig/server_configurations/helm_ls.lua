@@ -11,7 +11,7 @@ local default_capabilities = {
 return {
   default_config = {
     cmd = { 'helm_ls', 'serve' },
-    filetypes = { 'helm' },
+    filetypes = { 'helm', 'yaml.helm-values', 'yaml.helm-chartfile' },
     root_dir = util.root_pattern 'Chart.yaml',
     single_file_support = true,
     capabilities = default_capabilities,
